@@ -1,6 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const glob = require("glob");
+
+const pages = glob.sync("src/html/*.html");
 
 module.exports = {
   entry: './src/js/index.js',
@@ -15,7 +18,14 @@ module.exports = {
   },
   plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin({
     template: "src/html/index.html",
-    })],
+    }),
+    ...pages.map(
+        (el) =>
+          new HtmlWebpackPlugin({
+            filename: el.replace(/^src\/html\//, ""),
+            template: el,
+          })
+      ),],
   module: {
     rules: [
       {
