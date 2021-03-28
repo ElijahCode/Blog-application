@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const glob = require("glob");
 
 const pages = glob.sync("src/html/*.html");
@@ -25,7 +26,17 @@ module.exports = {
             filename: el.replace(/^src\/html\//, ""),
             template: el,
           })
-      ),],
+      ),
+      new BrowserSyncPlugin(
+        {
+        host: "localhost",
+        port: 3000,
+        proxy: "http://localhost:9000/",
+        },
+        {
+        reload: false,
+        }
+    ),],
   module: {
     rules: [
       {

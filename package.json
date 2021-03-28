@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "dev:serv": "webpack serve"
+    "start": "webpack serve --mode development"
   },
   "author": "Ilya Starikov",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.3.0",
     "css-loader": "^5.2.0",
     "glob": "^7.1.6",
     "html-loader": "^2.1.2",
