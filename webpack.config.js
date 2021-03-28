@@ -40,8 +40,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', "postcss-loader"],
+        test: /\.(sass|css)$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', "sass-loader", "postcss-loader"],
       },
       {
         test: /\.html$/i,
