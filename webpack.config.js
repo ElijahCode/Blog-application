@@ -18,7 +18,7 @@ module.exports = {
     port: 9000,
   },
   plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin({
-    template: "src/html/index.html",
+    template: "src/html/template/template.html",
     }),
     ...pages.map(
         (el) =>

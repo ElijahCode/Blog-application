@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        My blog
+    </title>
+    <head>
+        <nav class = "navigationBlock">
+            <div class = 'referenceBlock'>
+                <a href = 'href1' class = 'reference'>
+                    Главная
+                </a>
+                <a href = 'href2' class = 'reference'>
+                    Посты
+                </a>
+                <a href = 'href3' class = 'reference'>
+                    Обратная связь
+                </a>
+            </div>
+            <div class = 'aboutSiteBlock'>
+                <p class = 'aboutSiteParagraph'>
+                    Добро пожаловать на blog-application.net - блог обо всем и ниочем!
+                </p>
+            </div>
+        </nav>
+    </head>
+    <body>
+        <%= require('html-loader!.../html/main.html').default %>
+    </body>
+    <footer class = 'footer'>
+        <div class = "footerReferenceBlock">
+            <a href = 'href4' class = 'footerReference'>blog-applecation.net</a>
+        </div>
+        <div class = "footerSiteInformation">
+            <p class = 'siteInformation'>
+                Вы дошли до конца! Читать больше нечего!
+            </p>
+        </div>
+        <div class = 'contactsInSocialSitesBlock'></div>
+    </footer>
+</html>

@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "webpack",
+    "build:watch": "webpack --watch",
     "start": "webpack serve --mode development"
   },
   "author": "Ilya Starikov",
