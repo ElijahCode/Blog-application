@@ -1,0 +1,18 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Обратная связь';
+	- var mainBody = 'index-page';
+
+block bodyContent
+	main.main
+		.messageBlock
+			h3.commentHeader Comment #1 from User 1
+			p.commentMessage Cool blog! Well done!
+		.messageBlock
+			h3.commentHeader Comment #2 from User 2
+			p.commentMessage Wait new article! 
+		.writeYourCommentBlock
+			h4.inviteToComment Please, give feedback to me! It's important to next development of the blog.
+			input.commentBox(type = 'text')
+			button.commentButton Send feedback 		
