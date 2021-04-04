@@ -1,0 +1,24 @@
+@import ./utils/reset
+@import ./utils/fonts
+@import ./utils/vars
+@import ./particles/nav
+@import ./particles/footer
+@import ./pages/index
+
+.html
+    min-height: 100%
+    height: 100%
+    .body
+        background: $body-backgroud-color
+        height: 100%
+        display: grid
+        grid-row-gap: 15px
+        grid-template-rows: 10% 80% 25%
+        .footer
+            display: flex
+            justify-content: space-between
+            align-items: baseline
+            background: $footer-background-color
+            height: 25%
+
+    
