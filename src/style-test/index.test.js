@@ -28,7 +28,7 @@ describe("styles.test", () => {
     { width: 1920, height: 1080 },
     { width: 600, height: 1080 },
   ].forEach(({ width, height }) =>
-    it(`should have proper view for ${width}x${height} params`, async () => {
+    it(`index page should have proper view for ${width}x${height} params`, async () => {
       // setting up puppeteer
       const browser = await puppeteer.launch();
       const page = await browser.newPage();
@@ -36,9 +36,31 @@ describe("styles.test", () => {
       await page.setViewport({ width, height });
       // navigate to the page, served with webpack
       // IMPORTANT!: test assumes webpack is started
-      await page.goto("http://localhost:9000", { waitUntil: "networkidle0" });
 
-      const image = await page.screenshot();
+      let image;
+
+      await page.goto("http://localhost:9000/index.html", { waitUntil: "networkidle0" });
+
+      image = await page.screenshot();
+
+      expect(image).toMatchImageSnapshot();
+
+      await page.goto("http://localhost:9000/postsPage.html", { waitUntil: "networkidle0" });
+
+      image = await page.screenshot();
+
+      expect(image).toMatchImageSnapshot();
+
+      await page.goto("http://localhost:9000/post.html", { waitUntil: "networkidle0" });
+
+      image = await page.screenshot();
+
+      expect(image).toMatchImageSnapshot();
+
+      await page.goto("http://localhost:9000/feedback.html", { waitUntil: "networkidle0" });
+
+      image = await page.screenshot();
+
       await browser.close();
 
       expect(image).toMatchImageSnapshot();
