@@ -8,6 +8,7 @@
     "stylelint": "npx stylelint '**/*.scss'",
     "stylelint:fix": "npx stylelint '**/*.scss' --fix",
     "build": "webpack",
+    "build:prod": "webpack --mode production",
     "build:watch": "webpack --watch",
     "start": "webpack serve --mode development",
     "prepare": "husky install"
