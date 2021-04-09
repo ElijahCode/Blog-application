@@ -1,0 +1,33 @@
+@import '../utils/vars';
+    
+.mainFeedBack {
+    width: 50%;
+    margin: 0 auto;
+    background: $footer-background-color;
+    .messageBlock {
+        padding: 0% 1% 0% 1%;
+        .commentHeader {
+            font-size: $mainFeedBack-header-font-size;
+            font-weight: bold;
+            margin: 12px 0px 12px 0px;
+        }
+        .commentMessage {
+            font-size: $mainFeedBack-text-font-size;
+        }
+    }
+    .writeYourCommentBlock {
+        padding: 0% 1% 0% 1%;
+        margin-top: 24px;
+        .inviteToComment {
+            font-size: $mainFeedBack-text-font-size;
+        }
+        .commentBox {
+            width: 98%;
+            height: 50px;
+        }
+        .commentButton {
+            margin: 12px 12px 12px 25%;
+            width: 50%;
+        }
+    }
+}

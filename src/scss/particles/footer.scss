@@ -1,0 +1,47 @@
+@import "../utils/vars";
+
+.footerReference {
+    text-decoration: none;
+    color: $footer-text-color;
+}
+.footerReference:hover {
+    text-decoration: underline;
+}
+.social {
+    display: inline-block;
+    a {
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin: 0 10px 10px 0;
+        text-align: center;
+        color: hsla(0, 0%, 100%, 1);;
+        border: 1px solid hsla(0, 0%, 80%, 1);;
+        border-radius: 6px;
+        box-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.4), inset 1px 1px 0px hsla(0, 0%, 100%, 0.5);;
+    }
+    a:hover {
+        border-color: hsla(0, 0%, 53%, 1);;
+        opacity: 0.8;
+    }
+    svg {
+        margin-top: 7px;
+        width: 32px;
+        height: 32px;
+    }
+}
+.instagram {
+    a {
+        background: hsla(295, 69%, 59%, 1);;
+    }
+}
+.vk {
+    a { 
+        background: hsla(212, 39%, 47%, 1);
+    }
+}
+.youtube {
+    a {
+        background: hsla(2, 64%, 47%, 1);
+    }
+}
