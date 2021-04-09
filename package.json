@@ -5,6 +5,8 @@
   "private": true,
   "scripts": {
     "test": "jest",
+    "stylelint": "npx stylelint '**/*.scss'",
+    "stylelint:fix": "npx stylelint '**/*.scss' --fix",
     "build": "webpack",
     "build:watch": "webpack --watch",
     "start": "webpack serve --mode development"
