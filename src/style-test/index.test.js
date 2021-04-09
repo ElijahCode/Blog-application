@@ -43,19 +43,40 @@ describe("styles.test", () => {
 
       image = await page.screenshot();
 
-      expect(image).toMatchImageSnapshot();
+      expect(image).toMatchImageSnapshot(
+        process.env.CI
+        ? {
+          failureThreshold: 0.01,
+          failureThresholdType: "percent",
+        }
+        : undefined
+      );
 
       await page.goto("http://localhost:9000/postsPage.html", { waitUntil: "networkidle0" });
 
       image = await page.screenshot();
 
-      expect(image).toMatchImageSnapshot();
+      expect(image).toMatchImageSnapshot(
+        process.env.CI
+        ? {
+          failureThreshold: 0.01,
+          failureThresholdType: "percent",
+        }
+        : undefined
+      );
 
       await page.goto("http://localhost:9000/post.html", { waitUntil: "networkidle0" });
 
       image = await page.screenshot();
 
-      expect(image).toMatchImageSnapshot();
+      expect(image).toMatchImageSnapshot(
+        process.env.CI
+        ? {
+          failureThreshold: 0.01,
+          failureThresholdType: "percent",
+        }
+        : undefined
+      );
 
       await page.goto("http://localhost:9000/feedback.html", { waitUntil: "networkidle0" });
 
@@ -63,7 +84,14 @@ describe("styles.test", () => {
 
       await browser.close();
 
-      expect(image).toMatchImageSnapshot();
+      expect(image).toMatchImageSnapshot(
+        process.env.CI
+        ? {
+          failureThreshold: 0.01,
+          failureThresholdType: "percent",
+        }
+        : undefined
+      );
     })
   );
 });
