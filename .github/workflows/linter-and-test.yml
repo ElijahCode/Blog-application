@@ -16,7 +16,17 @@ jobs:
       - name: Lint
         run: |
           npm run stylelint
-          
+
       - name: Test
         run: |
+          # https://www.maketecheasier.com/run-bash-commands-background-linux/
+          npm start &>/dev/null &
+
           npm run test
+      - name: Archive artifacts for style tests
+        uses: actions/upload-artifact@v2
+        if: ${{ failure() }}
+        with:
+          name: styles-tests-artifacts
+          path: |
+            ./src/style-test
