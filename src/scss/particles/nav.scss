@@ -1,29 +1,32 @@
-@import "../utils/vars";
+@import '../utils/vars';
     
-.navigationBlock {
-    display: flex;
-    justify-content: space-between;
-    background-image: url(https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252_960_720.jpg);
-    background-size: cover;
-    .referenceBlock {
-        .reference {
-            margin-right: 10px;
-            background: $nav-text-background-color;
-            color: $nav-text-color;
-            text-decoration: none;
-        }
-        .reference:hover {
-            margin-right: 10px;
-            background: $nav-text-background-color;
-            color: $nav-text-color;
-            text-decoration: underline;
-        }
-    }
-    .aboutSiteBlock {
-        .aboutSiteParagraph {
-            background: $nav-text-background-color;
-            color: $nav-text-color;
-        }
-    }    
+.navigation-block {
+  background-image: url('https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252_960_720.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;  
 }
+
+.reference-block {
+  .reference {
+    background: $nav-text-background-color;
+    color: $nav-text-color;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+
+  .reference:hover {
+    background: $nav-text-background-color;
+    color: $nav-text-color;
+    margin-right: 10px;
+    text-decoration: underline;
+  }
+}
+
+.about-site-block {
+  .about-site-paragraph {
+    background: $nav-text-background-color;
+    color: $nav-text-color;
+  }
+}  
 

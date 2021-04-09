@@ -1,17 +1,19 @@
-@import "../utils/vars";
+@import '../utils/vars';
 
-.mainPost {
-    background: $footer-background-color;
-    overflow: auto;
-    .postArticle {
-        .postHeader {
-            font-size: $mainPost-header-font-size;
-            font-weight: bold;
-            margin-bottom: 24px;
-        }
-        .postParagraph {
-            font-size: $mainPost-text-font-size;
-            margin-bottom: 16px;
-        }
-    }
+.main-post {
+  background: $footer-background-color;
+  overflow: auto;
+}
+
+.post-article {
+  .post-header {
+    font-size: $main-post-header-font-size;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+
+  .post-paragraph {
+    font-size: $main-post-text-font-size;
+    margin-bottom: 16px;
+  }
 }
