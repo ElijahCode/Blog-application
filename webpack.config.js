@@ -4,10 +4,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 const glob = require("glob");
 
-const pages = glob.sync("src/pug/pages/*.pug");
+const pages = glob.sync("common.blocks/**/*.pug");
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: './common.blocks/main/main.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
@@ -18,12 +18,12 @@ module.exports = {
     port: 9000,
   },
   plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin({
-    template: "src/pug/pages/index.pug",
+    template: "common.blocks/index/index.pug",
     }),
     ...pages.map(
         (el) =>
           new HtmlWebpackPlugin({
-            filename: el.replace(/\.pug/,'.html').replace(/^src\/pug\/pages\//, ""),
+            filename: el.replace(/\.pug/,'.html').replace(/^common.blocks\/*\\/, ""),
             template: el,
           })
       ),

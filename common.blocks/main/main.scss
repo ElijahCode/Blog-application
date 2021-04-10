@@ -1,11 +1,10 @@
-@import './utils/reset';
-@import './utils/vars';
-@import './particles/nav';
-@import './particles/footer';
-@import './pages/index';
-@import './pages/postsPage';
-@import './pages/post';
-@import './pages/feedBack';
+@import '../../src/reset.scss';
+@import '../nav/nav.scss';
+@import '../footer/footer.scss';
+@import '../index/index.scss';
+@import '../postsPage/postsPage.scss';
+@import '../post/post.scss';
+@import '../feedback/feedBack.scss';
 
 .html {
   font-weight: 100%;

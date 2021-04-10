@@ -1,7 +1,7 @@
-@import '../utils/vars';
+@import '../../src/vars.scss';
     
 .navigation-block {
-  background-image: url('img/nav-backgroud.jpg');
+  background-image: url('../nav/nav-backgroud.jpg');
   background-size: cover;
   display: flex;
   justify-content: space-between;  
