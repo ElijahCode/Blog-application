@@ -47,6 +47,13 @@ module.exports = {
         test: /\.pug$/i,
         loader: 'pug-loader',
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          name: 'images/[name].[ext]'
+        },
+      }
     ],
   },
 };

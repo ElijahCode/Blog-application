@@ -23,6 +23,7 @@
     "browser-sync-webpack-plugin": "^2.3.0",
     "css-loader": "^5.2.0",
     "cssnano": "^4.1.10",
+    "file-loader": "^6.2.0",
     "glob": "^7.1.6",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
