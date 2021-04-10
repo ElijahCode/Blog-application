@@ -8,14 +8,14 @@
 }
 
 .reference-block {
-  .reference {
+  .reference-block_reference {
     background: $nav-text-background-color;
     color: $nav-text-color;
     margin-right: 10px;
     text-decoration: none;
   }
 
-  .reference:hover {
+  .reference-block_reference:hover {
     background: $nav-text-background-color;
     color: $nav-text-color;
     margin-right: 10px;
@@ -24,7 +24,7 @@
 }
 
 .about-site-block {
-  .about-site-paragraph {
+  .about-site-block_paragraph {
     background: $nav-text-background-color;
     color: $nav-text-color;
   }

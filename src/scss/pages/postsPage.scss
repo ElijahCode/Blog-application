@@ -18,23 +18,23 @@
   text-overflow: ellipsis;
   width: 25%;
 
-  .post-header {
+  .post_header {
     font-size: $main-posts-page-header-font-size;
     font-weight: bold;
     margin-bottom: 4px;
   }    
 
-  .post-reference {
+  .post_reference {
     color: $main-posts-page-text-color;
     font-size: $main-posts-page-reference-font-size;
     text-decoration: none;
   }
 
-  .post-reference:hover {
+  .post_reference:hover {
     text-decoration: underline;
   }
 
-  .post-paragraph {
+  .post_paragraph {
     font-size: $main-posts-page-text-font-size;
     margin-top: 4px;
   }

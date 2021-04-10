@@ -4,15 +4,15 @@ block variables
 	- var title = 'Обратная связь';
 	- var mainBody = 'index-page';
 
-block bodyContent
+block body-content
 	main.main-feed-back
 		.message-block
-			h3.comment-header Comment #1 from User 1
-			p.comment-message Cool blog! Well done!
+			h3.message-block_comment-header Comment #1 from User 1
+			p.message-block_comment-message Cool blog! Well done!
 		.message-block
-			h3.comment-header Comment #2 from User 2
-			p.comment-message Wait new article! 
+			h3.message-block_comment-header Comment #2 from User 2
+			p.message-block_comment-message Wait new article! 
 		.write-your-comment-block
-			h4.invite-to-comment Please, give feedback to me! It's important to next development of the blog.
-			input.comment-box(type = 'text')
-			button.comment-button Send feedback 		
+			h4.write-your-comment-block_invite-to-comment Please, give feedback to me! It's important to next development of the blog.
+			input.write-your-comment-block_comment-box(type = 'text')
+			button.write-your-comment-block_comment-button Send feedback 		

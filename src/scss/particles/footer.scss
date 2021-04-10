@@ -1,11 +1,11 @@
 @import '../utils/vars';
 
-.footer-reference {
+.footer_reference {
   color: $footer-text-color;
   text-decoration: none;
 }
 
-.footer-reference:hover {
+.footer_reference:hover {
   text-decoration: underline;
 }
 
@@ -36,19 +36,19 @@
   }
 }
 
-.instagram {
+.social_instagram {
   a {
     background: hsla(295, 69%, 59%, 1);;
   }
 }
 
-.vk {
+.social_vk {
   a { 
     background: hsla(212, 39%, 47%, 1);
   }
 }
 
-.youtube {
+.social_youtube {
   a {
     background: hsla(2, 64%, 47%, 1);
   }

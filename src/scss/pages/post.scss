@@ -6,13 +6,13 @@
 }
 
 .post-article {
-  .post-header {
+  .post-article_post-header {
     font-size: $main-post-header-font-size;
     font-weight: bold;
     margin-bottom: 24px;
   }
 
-  .post-paragraph {
+  .post-article_post-paragraph {
     font-size: $main-post-text-font-size;
     margin-bottom: 16px;
   }

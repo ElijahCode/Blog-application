@@ -8,24 +8,24 @@
   display: flex;
   flex-direction: column;
 
-  .header2 {
+  .about-blog_header2 {
     font-size: $main-index-header-font-size;
     font-weight: bold;
     margin-bottom: 16px;
   }
 
-  .article-paragraph {
+  .about-blog_article-paragraph {
     font-size: $main-index-text-font-size;
     margin-bottom: 8px;
   }
 
-  .to-posts {
+  .about-blog_to-posts {
     color: $main-index-reference-color;
     margin-top: 32px;
     text-decoration: none;
   }
 
-  .to-posts:hover {
+  .about-blog_to-posts:hover {
     text-decoration: underline;
   }
 }

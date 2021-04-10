@@ -9,13 +9,13 @@
 .message-block {
   padding: 0% 1%;
 
-  .comment-header {
+  .message-block_comment-header {
     font-size: $main-feed-back-header-font-size;
     font-weight: bold;
     margin: 12px 0;
   }
 
-  .comment-message {
+  .message-block_comment-message {
     font-size: $main-feed-back-text-font-size;
   }
 }
@@ -24,16 +24,16 @@
   margin-top: 24px;
   padding: 0% 1%;
 
-  .invite-to-comment {
+  .write-your-comment-block_invite-to-comment {
     font-size: $main-feed-back-text-font-size;
   }
 
-  .comment-box {
+  .write-your-comment-block_comment-box {
     height: 50px;
     width: 98%;
   }
 
-  .comment-button {
+  .write-your-comment-block_comment-button {
     margin: 12px 12px 12px 25%;
     width: 50%;
   }
