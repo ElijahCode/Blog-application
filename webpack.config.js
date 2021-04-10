@@ -23,7 +23,7 @@ module.exports = {
     ...pages.map(
         (el) =>
           new HtmlWebpackPlugin({
-            filename: el.replace(/\.pug/,'.html').replace(/^common.blocks\/*\\/, ""),
+            filename: el.replace(/\.pug/,'.html').replace(/^common\.blocks\/[a-zA-Z]{1,}\//, ""),
             template: el,
           })
       ),
