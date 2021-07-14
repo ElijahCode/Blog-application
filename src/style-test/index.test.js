@@ -8,7 +8,7 @@ describe("styles.test", () => {
 
   beforeEach(() => {
     originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
-    jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+    jest.setTimeout(10000);
   });
 
   afterEach(() => {
@@ -22,6 +22,7 @@ describe("styles.test", () => {
     it(`index page should have proper view for ${width}x${height} params`, async () => {
       const browser = await puppeteer.launch();
       const page = await browser.newPage();
+
       await page.setViewport({ width, height });
 
       let image;

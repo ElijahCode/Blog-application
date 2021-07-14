@@ -17,10 +17,6 @@ jobs:
         run: |
           npm run lint
 
-      - name: StyleLint
-        run: |
-          npm run stylelint
-
       - name: Test
         run: |
           # https://www.maketecheasier.com/run-bash-commands-background-linux/
