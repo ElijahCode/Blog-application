@@ -1,0 +1,32 @@
+@import "../../../src/vars";
+
+.main-index {
+  background: $footer-background-color;
+  padding: 10px;
+}
+
+.about-blog {
+  display: flex;
+  flex-direction: column;
+
+  .about-blog_header2 {
+    font-size: $main-index-header-font-size;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .about-blog_article-paragraph {
+    font-size: $main-index-text-font-size;
+    margin-bottom: 8px;
+  }
+
+  .about-blog_to-posts {
+    color: $main-index-reference-color;
+    margin-top: 32px;
+    text-decoration: none;
+  }
+
+  .about-blog_to-posts:hover {
+    text-decoration: underline;
+  }
+}

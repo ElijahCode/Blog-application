@@ -1,0 +1,41 @@
+@import "../../../src/vars";
+
+.main-posts-page {
+  background: $footer-background-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.post {
+  background: $main-posts-page-background-post-color;
+  border: 1px solid hsla(0, 0%, 50%, 1);
+  border-radius: 18px;
+  height: 25%;
+  overflow: hidden;
+  padding: 10px;
+  text-overflow: clip;
+  width: 25%;
+
+  .post_header {
+    font-size: $main-posts-page-header-font-size;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .post_reference {
+    color: $main-posts-page-text-color;
+    font-size: $main-posts-page-reference-font-size;
+    text-decoration: none;
+  }
+
+  .post_reference:hover {
+    text-decoration: underline;
+  }
+
+  .post_paragraph {
+    font-size: $main-posts-page-text-font-size;
+    margin-top: 4px;
+  }
+}

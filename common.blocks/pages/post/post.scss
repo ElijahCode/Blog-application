@@ -1,0 +1,20 @@
+@import "../../../src/vars";
+
+.main-post {
+  background: $footer-background-color;
+  overflow: scroll;
+  padding: 15px;
+}
+
+.post-article {
+  .post-article_post-header {
+    font-size: $main-post-header-font-size;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+
+  .post-article_post-paragraph {
+    font-size: $main-post-text-font-size;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../src/vars";
+
+.footer_reference {
+  color: $footer-text-color;
+  text-decoration: none;
+}
+
+.footer_reference:hover {
+  text-decoration: underline;
+}
+
+.social {
+  display: inline-block;
+
+  a {
+    border: 1px solid hsla(0, 0%, 80%, 1);
+    border-radius: 6px;
+    box-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.4),
+      inset 1px 1px 0 hsla(0, 0%, 100%, 0.5);
+    color: hsla(0, 0%, 100%, 1);
+    display: block;
+    height: 48px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    width: 48px;
+  }
+
+  a:hover {
+    border-color: hsla(0, 0%, 53%, 1);
+    opacity: 0.8;
+  }
+
+  svg {
+    height: 32px;
+    margin-top: 7px;
+    width: 32px;
+  }
+}
+
+.social_instagram {
+  a {
+    background: hsla(295, 69%, 59%, 1);
+  }
+}
+
+.social_vk {
+  a {
+    background: hsla(212, 39%, 47%, 1);
+  }
+}
+
+.social_youtube {
+  a {
+    background: hsla(2, 64%, 47%, 1);
+  }
+}

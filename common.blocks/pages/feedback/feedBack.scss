@@ -1,0 +1,42 @@
+@import "../../../src/vars";
+
+.main-feed-back {
+  background: $footer-background-color;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+}
+
+.message-block {
+  padding: 0% 1%;
+
+  .message-block_comment-header {
+    font-size: $main-feed-back-header-font-size;
+    font-weight: bold;
+    margin: 12px 0;
+  }
+
+  .message-block_comment-message {
+    font-size: $main-feed-back-text-font-size;
+  }
+}
+
+.write-your-comment-block {
+  margin-top: 24px;
+  padding: 0% 1%;
+
+  .write-your-comment-block_invite-to-comment {
+    font-size: $main-feed-back-text-font-size;
+    margin: 10px auto;
+  }
+
+  .write-your-comment-block_comment-box {
+    height: 50px;
+    width: 98%;
+  }
+
+  .write-your-comment-block_comment-button {
+    margin: 12px 12px 12px 25%;
+    width: 50%;
+  }
+}

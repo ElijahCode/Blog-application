@@ -1,0 +1,32 @@
+@import "../../src/vars";
+
+.navigation-block {
+  background-image: url("../nav/nav-backgroud.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.reference-block {
+  .reference-block_reference {
+    background: $nav-text-background-color;
+    color: $nav-text-color;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+
+  .reference-block_reference:hover {
+    background: $nav-text-background-color;
+    color: $nav-text-color;
+    margin-right: 10px;
+    text-decoration: underline;
+  }
+}
+
+.about-site-block {
+  .about-site-block_paragraph {
+    background: $nav-text-background-color;
+    color: $nav-text-color;
+  }
+}
