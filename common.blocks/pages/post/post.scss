@@ -2,7 +2,8 @@
 
 .main-post {
   background: $footer-background-color;
-  overflow: auto;
+  overflow: scroll;
+  padding: 15px;
 }
 
 .post-article {

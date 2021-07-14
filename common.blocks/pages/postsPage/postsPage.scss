@@ -14,8 +14,8 @@
   border-radius: 18px;
   height: 25%;
   overflow: hidden;
-  padding: 0% 1%;
-  text-overflow: ellipsis;
+  padding: 10px;
+  text-overflow: clip;
   width: 25%;
 
   .post_header {

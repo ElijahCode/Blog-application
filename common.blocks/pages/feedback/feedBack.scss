@@ -3,6 +3,7 @@
 .main-feed-back {
   background: $footer-background-color;
   margin: 0 auto;
+  padding: 10px;
   width: 50%;
 }
 
@@ -26,6 +27,7 @@
 
   .write-your-comment-block_invite-to-comment {
     font-size: $main-feed-back-text-font-size;
+    margin: 10px auto;
   }
 
   .write-your-comment-block_comment-box {
