@@ -1,5 +1,5 @@
-@import '../../src/vars';
-    
+@import "../../src/vars";
+
 .main-posts-page {
   background: $footer-background-color;
   display: flex;
@@ -22,7 +22,7 @@
     font-size: $main-posts-page-header-font-size;
     font-weight: bold;
     margin-bottom: 4px;
-  }    
+  }
 
   .post_reference {
     color: $main-posts-page-text-color;

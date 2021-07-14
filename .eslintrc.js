@@ -2,14 +2,14 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    "jest/globals": true,
+    jasmine: true,
   },
-  extends: [
-    'airbnb-base',
-  ],
+  extends: ["airbnb-base", "plugin:prettier/recommended"],
   parserOptions: {
     ecmaVersion: 12,
-    sourceType: 'module',
+    sourceType: "module",
   },
-  rules: {
-  },
+  plugins: ["jest", "jasmine"],
+  rules: {},
 };

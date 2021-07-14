@@ -1,10 +1,10 @@
-@import '../../src/reset';
-@import '../nav/nav';
-@import '../footer/footer';
-@import '../index/index';
-@import '../postsPage/postsPage';
-@import '../post/post';
-@import '../feedback/feedBack';
+@import "../../src/reset";
+@import "../nav/nav";
+@import "../footer/footer";
+@import "../index/index";
+@import "../postsPage/postsPage";
+@import "../post/post";
+@import "../feedback/feedBack";
 
 .html {
   font-weight: 100%;
@@ -28,6 +28,3 @@
   height: 25%;
   justify-content: space-between;
 }
-
-
-    

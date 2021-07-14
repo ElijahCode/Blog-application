@@ -1,10 +1,10 @@
-@import '../../src/vars';
-    
+@import "../../src/vars";
+
 .navigation-block {
-  background-image: url('../nav/nav-backgroud.jpg');
+  background-image: url("../nav/nav-backgroud.jpg");
   background-size: cover;
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 
 .reference-block {
@@ -28,5 +28,4 @@
     background: $nav-text-background-color;
     color: $nav-text-color;
   }
-}  
-
+}

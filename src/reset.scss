@@ -1,5 +1,3 @@
-
-
 html,
 body,
 div,
@@ -89,7 +87,6 @@ video {
   vertical-align: baseline;
 }
 
-
 article,
 aside,
 details,
@@ -109,7 +106,7 @@ body {
 }
 
 ol,
-ul { 
+ul {
   list-style: none;
 }
 
@@ -121,15 +118,15 @@ q {
 blockquote {
   &::before,
   &::after {
-    content: '';
+    content: "";
     content: none;
   }
 }
 
 q {
   &::before,
-  &::after { 
-    content: '';
+  &::after {
+    content: "";
     content: none;
   }
 }
